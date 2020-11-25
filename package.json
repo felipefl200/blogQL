@@ -10,7 +10,6 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "axios": "^0.19",
         "cross-env": "^7.0",
         "laravel-mix": "^5.0.1",
         "resolve-url-loader": "^2.3.1",
@@ -22,5 +21,11 @@
         "postcss": "^7.0.35",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "apollo-boost": "^0.4.9",
+        "graphql": "^15.4.0",
+        "graphql-tag": "^2.11.0",
+        "vue-apollo": "^3.0.5",
+        "vue-router": "^3.4.9"
+    }
 }
