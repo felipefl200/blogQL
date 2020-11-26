@@ -6,7 +6,9 @@ import VueApollo from 'vue-apollo'
 import './bootstrap'
 
 import PostList from './components/PostList.vue'
-import Post from './components/Post'
+import Post from './components/Post.vue'
+import TopicPostList from './components/TopicPostList.vue'
+import AuthorPostList from './components/AuthorPostList.vue'
 
 window.vue = Vue
 
@@ -30,6 +32,16 @@ const routes = [
         path: '/post/:id',
         name: 'post',
         component: Post
+    },
+    {
+        path: '/topics/:slug',
+        name: 'topic',
+        component: TopicPostList
+    },
+    {
+        path: '/authors/:id',
+        name: 'author',
+        component: AuthorPostList
     }
 ]
 

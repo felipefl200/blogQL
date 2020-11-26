@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         \App\Models\User::factory(10)->create();
-        Topic::create(['name' => 'Feature', 'slug' => 'featured']);
-        Topic::create(['name' => 'UserFul Links', 'slug' => 'links']);
-        Topic::create(['name' => 'Guides & Tutorials', 'slug' => 'tutorials']);
+        Topic::create(['name' => 'Destaques', 'slug' => 'featured']);
+        Topic::create(['name' => 'Links uteis', 'slug' => 'links']);
+        Topic::create(['name' => 'Guias e tutoriais', 'slug' => 'tutorials']);
 
         Post::factory(20)->create();
     }

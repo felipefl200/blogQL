@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="{{mix('css/app.css')}}">
         <title>BlogQL</title>
     </head>
-    <body class="bg-gray-200">
+    <body class="bg-gray-200 antialiased">
         <div id="app">
             <router-view></router-view>
         </div>

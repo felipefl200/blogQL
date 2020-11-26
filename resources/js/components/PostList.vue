@@ -3,7 +3,12 @@
     <h2 class="text-4xl">Todos os posts</h2>
     <div v-if="$apollo.loading">Loading...</div>
     <div v-else>
-     <PostListItem v-for="post in posts" :key="post.id" :post="post" class="mt-10 bg-gray-50 rounded p-4 shadow" />
+      <PostListItem
+        v-for="post in posts"
+        :key="post.id"
+        :post="post"
+        class="mt-10 bg-gray-50 rounded p-4 shadow"
+      />
     </div>
   </div>
 </template>
@@ -21,6 +26,15 @@ export default {
           id
           title
           lead
+          created_at
+          author {
+            id
+            name
+          }
+          topic {
+            name
+            slug
+          }
         }
       }
     `,
